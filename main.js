@@ -21,9 +21,9 @@ var people = [
         title: "CEO"}
 ]
 
-for (let i = 0; i < name.length; i++) {
-    console.log(`${name[i].name}'s job title is ${name[i].title}`);
-}
+for (let i = 0; i < people.length; i++) {
+    console.log(`${people[i].name}'s job title is ${people[i].title}`);
+};
 
 // for (var i=0; i < people.length; i++) {
 //     if (i === 0)
