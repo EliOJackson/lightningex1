@@ -40,23 +40,49 @@
 // }
 
 
-  let lunch = { 
+//   let lunch = { 
     
-        name: "Peanut Butter",
-        type: "Sandwhich",
-        bread: "wheat",
-        fullName: function() {
-            return lunch.name + " " + lunch.type
-    }
-};
+//         name: "Peanut Butter",
+//         type: "Sandwhich",
+//         bread: "wheat",
+//         fullName: function() {
+//             return lunch.name + " " + lunch.type
+//     }
+// };
 
-console.log(lunch);
+// console.log(lunch);
 
-    let dinner = Object.create(lunch);
-    dinner.time = "7:30 PM";
-    dinner.location = "The Kitchen Table";
+//     let dinner = Object.create(lunch);
+//     dinner.time = "7:30 PM";
+//     dinner.location = "The Kitchen Table";
 
-console.log(dinner);
-console.log(dinner.hasOwnProperty("name"));
-console.log(dinner.hasOwnProperty("time"));
+// console.log(dinner);
+// console.log(dinner.hasOwnProperty("name")); 
+// console.log(dinner.hasOwnProperty("time")); 
         
+let loop = [
+    45, 
+    "I",
+    true, 
+    null, 
+    "am", 
+    3.56, 
+    "a", 
+    undefined, 
+    { catchphrase: "Oh hai, Mark"}, 
+    "JS", 
+    "rockstar"
+].filter( (item) => {
+    return typeof(item) === "string";
+});
+
+console.log('string array', loop)
+
+// function result(loop) {
+
+// let strings = loop.filter( (item) => {
+//     return typeof(item) === "string";
+// })
+// };
+// console.log(result);
+
