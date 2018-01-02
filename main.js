@@ -60,23 +60,13 @@
 // console.log(dinner.hasOwnProperty("name")); 
 // console.log(dinner.hasOwnProperty("time")); 
         
-let loop = [
-    45, 
-    "I",
-    true, 
-    null, 
-    "am", 
-    3.56, 
-    "a", 
-    undefined, 
-    { catchphrase: "Oh hai, Mark"}, 
-    "JS", 
-    "rockstar"
-].filter( (item) => {
-    return typeof(item) === "string";
-});
+// let loop = [
+//     45, "I",true, null, "am",  3.56, "a", undefined,  { catchphrase: "Oh hai, Mark"}, "JS", "rockstar"
+// ].filter( (item) => {
+//     return typeof(item) === "string";
+// });
 
-console.log('string array', loop)
+// console.log('string array', loop)
 
 // function result(loop) {
 
@@ -86,3 +76,47 @@ console.log('string array', loop)
 // };
 // console.log(result);
 
+// 1/2/18
+
+// Loop-a-looza:
+// // Make a for loop, .forEach and .filter on this array to get the same result
+// // Make an array called fave_demo that contains only ages from 18 - 49
+
+// let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102];
+// let fave_demo = [];
+
+// for (let i = 0; i < ages.length; i++) {
+//     if ( ages < 50 && ages> 17 ) fave_demo.push(ages[i])
+//     // console.log(ages);
+//     console.log("This is a fave demo " + fave_demo);
+// }
+// // for each
+
+// // let fE = []; look at with salde 
+// ages.forEach( (age) => {
+//     if (age < 50 && age > 17) fave_demo.push(age);
+//     console.log(fave_demo + " This is the For Each");
+// });
+
+// // filter
+
+
+// // let fave_demo = ages.filter( (age) => age < 50 && age > 17 )
+// // console.log(fave_demo);
+
+// Part 2 for 1/2/18
+hitchhikers_guide = {
+    characters: ["Zaphod", "Arthur", "Ford", "Trillian"],
+    catchphrase: "Don't Panic",
+    random_facts: {
+      copies_sold: 14000000,
+      formats: ["radio", "TV", "film", "graphic novel"],
+      ultimate_answer: {
+        meaning_of_life: 42
+      }
+    }
+  };
+
+  // use dot notation to acces the value of the key "meaning_of_life" in this object
+
+console.log(hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life);
