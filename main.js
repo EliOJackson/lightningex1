@@ -101,22 +101,38 @@
 // // filter
 
 
-// // let fave_demo = ages.filter( (age) => age < 50 && age > 17 )
-// // console.log(fave_demo);
+// // // let fave_demo = ages.filter( (age) => age < 50 && age > 17 )
+// // // console.log(fave_demo);
 
-// Part 2 for 1/2/18
-hitchhikers_guide = {
-    characters: ["Zaphod", "Arthur", "Ford", "Trillian"],
-    catchphrase: "Don't Panic",
-    random_facts: {
-      copies_sold: 14000000,
-      formats: ["radio", "TV", "film", "graphic novel"],
-      ultimate_answer: {
-        meaning_of_life: 42
-      }
-    }
-  };
+// // Part 2 for 1/2/18
+// hitchhikers_guide = {
+//     characters: ["Zaphod", "Arthur", "Ford", "Trillian"],
+//     catchphrase: "Don't Panic",
+//     random_facts: {
+//       copies_sold: 14000000,
+//       formats: ["radio", "TV", "film", "graphic novel"],
+//       ultimate_answer: {
+//         meaning_of_life: 42
+//       }
+//     }
+//   };
 
-  // use dot notation to acces the value of the key "meaning_of_life" in this object
+//   // use dot notation to acces the value of the key "meaning_of_life" in this object
 
-console.log(hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life);
+// console.log(hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life);
+
+let yoda_quote = ["the", "greatest", "teacher", "failer", "is"];
+
+// Captitalize 'the', insert a comma after 'teacher' and output "Yoda" says, "The greatest teacher, failuer is"
+
+// let newQuote = yoda_quote.splice(0, 1, "The") + yoda_quote.splice(1);
+// console.log(newQuote);
+let newQuote = yoda_quote.map( (word) => {
+    if(word ==="the")
+        word = word.slice(0,1).toUpperCase() + word.slice(1)
+    if(word === "teacher")
+        word = word + ","
+    return word
+}).join(" ")
+
+console.log(newQuote);
