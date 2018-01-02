@@ -82,8 +82,8 @@
 // // Make a for loop, .forEach and .filter on this array to get the same result
 // // Make an array called fave_demo that contains only ages from 18 - 49
 
-// let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102];
-// let fave_demo = [];
+let ages = [12, 23, 89, 16, 34, 19, 2, 7, 45, 50, 26, 102];
+let fave_demo = [];
 
 // for (let i = 0; i < ages.length; i++) {
 //     if ( ages < 50 && ages> 17 ) fave_demo.push(ages[i])
@@ -92,11 +92,11 @@
 // }
 // // for each
 
-// // let fE = []; look at with salde 
-// ages.forEach( (age) => {
-//     if (age < 50 && age > 17) fave_demo.push(age);
-//     console.log(fave_demo + " This is the For Each");
-// });
+// let fE = []; look at with salde 
+ages.forEach( (age) => {
+    if (age < 50 && age > 17) fave_demo.push(age);
+});
+console.log(fave_demo + " This is the For Each");
 
 // // filter
 
@@ -121,18 +121,18 @@
 
 // console.log(hitchhikers_guide.random_facts.ultimate_answer.meaning_of_life);
 
-let yoda_quote = ["the", "greatest", "teacher", "failer", "is"];
+// let yoda_quote = ["the", "greatest", "teacher", "failer", "is"];
 
 // Captitalize 'the', insert a comma after 'teacher' and output "Yoda" says, "The greatest teacher, failuer is"
 
 // let newQuote = yoda_quote.splice(0, 1, "The") + yoda_quote.splice(1);
 // console.log(newQuote);
-let newQuote = yoda_quote.map( (word) => {
-    if(word ==="the")
-        word = word.slice(0,1).toUpperCase() + word.slice(1)
-    if(word === "teacher")
-        word = word + ","
-    return word
-}).join(" ")
+// let newQuote = yoda_quote.map( (word) => {
+//     if(word ==="the")
+//         word = word.slice(0,1).toUpperCase() + word.slice(1)
+//     if(word === "teacher")
+//         word = word + ","
+//     return word
+// }).join(" ")
 
-console.log(newQuote);
+// console.log(newQuote);
