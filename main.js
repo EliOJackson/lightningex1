@@ -92,11 +92,11 @@ let fave_demo = [];
 // }
 // // for each
 
-// let fE = []; look at with salde 
-ages.forEach( (age) => {
-    if (age < 50 && age > 17) fave_demo.push(age);
-});
-console.log(fave_demo + " This is the For Each");
+// // let fE = []; look at with salde 
+// ages.forEach( (age) => {
+//     if (age < 50 && age > 17) fave_demo.push(age);
+// });
+// console.log(fave_demo + " This is the For Each");
 
 // // filter
 
@@ -136,3 +136,17 @@ console.log(fave_demo + " This is the For Each");
 // }).join(" ")
 
 // console.log(newQuote);
+
+
+// 1/4/18
+// Choose a loop method of your choice to get this result from this array:
+// expected result: [3, 5, 7, 9, 11, 13]
+let nums = [1, 2, 3, 4, "5", 6, "7"]
+for (let i = 0; i < nums.length; i++) {
+    let newNums = nums[i] + ;
+    console.log(newNums);
+}
+let result = [];
+for (let i = 0; i < nums.length-1; i++) {
+    result.push(+nums[i] + +nums[i + 1]);
+}
